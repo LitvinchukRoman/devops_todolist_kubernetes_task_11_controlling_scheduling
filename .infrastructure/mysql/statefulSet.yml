@@ -60,10 +60,10 @@ spec:
           initialDelaySeconds: 5
           periodSeconds: 2
           timeoutSeconds: 1
-        tolerations:
-        - key: "app"
-          operator: "Equal"
-          value: "mysql"
+      tolerations:
+      - key: "app"
+        operator: "Equal"
+        value: "mysql"
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:

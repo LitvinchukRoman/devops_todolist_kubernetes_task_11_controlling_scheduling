@@ -55,10 +55,6 @@ nodes:
       containerPath: /data
   labels:
     app: mysql
-  taints:
-    - key: "app"
-      value: "mysql"
-      effect: "NoSchedule"
 - role: worker
   extraMounts:
     - hostPath: /tmp
